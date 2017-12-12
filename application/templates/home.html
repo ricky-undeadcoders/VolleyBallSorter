@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+<form id="participant_list_form" action="{{ url_for('home') }}" method="post">
+    <textarea name="participant_list" id="participant_list" placeholder="Gimme yo data"></textarea>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

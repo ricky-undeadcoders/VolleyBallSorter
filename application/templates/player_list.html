@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div style="position: fixed; right: 20px; border:solid;" class="form-group">
+    <div class="btn form-control">Ones: <a id="1_players">0</a></div>
+    <div class="btn form-control">Twos: <a id="2_players">0</a></div>
+    <div class="btn form-control">Threes: <a id="3_players">0</a></div>
+    <div class="btn form-control">Fours: <a id="4_players">0</a></div>
+    <button class="btn float-right" onclick="$('#player_list_ranking').submit();">Submit</button>
+</div>
+<div class="form-group">
+    <form id="player_list_ranking" action="{{ url_for('player_list') }}" method="post">
+        {% for id, player in player_dict.iteritems() %}
+        {% set group = id|int%4 + 1 %}
+        <div class="row col-10">
+            <input name="ranking_{{id}}" class="form-control col-1 ranking" placeholder="Ranking" type="number"
+                   max="4" min="1" value="{{group}}"/>
+            <input class="form-control col-3 name" placeholder="Name" value="{{ player['name'] }}"/>
+            <input class="form-control col-3" placeholder="Gender" value="{{ player['gender'] }}"
+                   disabled/>
+            <input class="form-control col-1" placeholder="Skill" value="{{ player['skill'] }}" disabled/>
+        </div>
+        {% endfor %}
+    </form>
+</div>
+<script type="text/javascript">
+    $('.ranking').change(function () {
+        var one = 0;
+        var two = 0;
+        var three = 0;
+        var four = 0;
+        $('.ranking').each(function () {
+            if (parseInt($(this).val()) == 1) {
+                one += 1;
+            }
+            if (parseInt($(this).val()) == 2) {
+                two += 1;
+            }
+            if (parseInt($(this).val()) == 3) {
+                three += 1;
+            }
+            if (parseInt($(this).val()) == 4) {
+                four += 1;
+            }
+        });
+        $('#1_players').text(one);
+        $('#2_players').text(two);
+        $('#3_players').text(three);
+        $('#4_players').text(four);
+    })
+</script>
+{% endblock %}
