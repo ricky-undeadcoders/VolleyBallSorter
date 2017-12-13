@@ -10,6 +10,7 @@ from copy import deepcopy
 from random import shuffle
 
 player_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'player_dict.json')
+team_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'team_dict.json')
 
 
 def create_player_dict(content):
@@ -51,6 +52,19 @@ def get_player_dict():
     return player_dict
 
 
+def create_team_dict():
+    teams = sort_players()
+    with open(team_file, 'w') as outfile:
+        outfile.write(dumps(teams))
+    return teams
+
+
+def get_team_dict():
+    with open(team_file) as infile:
+        teams = loads(infile.read())
+    return teams
+
+
 def update_player_dict_with_rankings(rankings_per_player):
     player_dict = get_player_dict()
     new_player_dict = {}
@@ -71,7 +85,6 @@ def sort_players():
     three_players = []
     four_players = []
     for id, player in player_dict.iteritems():
-        print type(player)
         if player.get('ranking') == '1':
             one_players.append(player)
         if player.get('ranking') == '2':
@@ -80,17 +93,14 @@ def sort_players():
             three_players.append(player)
         if player.get('ranking') == '4':
             four_players.append(player)
-    for player in one_players:
-        current_team = []
-        current_team.append(player)
-        teams.append(current_team)
-    for index, player in enumerate(deepcopy(two_players)):
+    for i in xrange(12):
+        shuffle(one_players)
         shuffle(two_players)
-        teams[index].append(two_players.pop())
-    for index, player in enumerate(deepcopy(three_players)):
         shuffle(three_players)
-        teams[index].append(three_players.pop())
-    for index, player in enumerate(deepcopy(four_players)):
         shuffle(four_players)
-        teams[index].append(four_players.pop())
+        team = [one_players.pop(),
+                two_players.pop(),
+                three_players.pop(),
+                four_players.pop()]
+        teams.append(team)
     return teams

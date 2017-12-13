@@ -1,8 +1,18 @@
 {% extends 'base.html' %}
 {% block body %}
+<div style="position: fixed; right: 20px; border:solid;" class="form-group">
+    <form action="{{ url_for('teams') }}" method="post">
+        <button class="btn float-right" type="submit">Reorder</button>
+    </form>
+</div>
 {% for team in teams %}
-{% for player in team %}
-{{player['name']}}
-{% endfor %}
+<div>
+    {% for player in team %}
+    <div>
+        {{ player['ranking'] }}: {{ player['name'] }}
+    </div>
+    {% endfor %}
+</div>
+<hr>
 {% endfor %}
 {% endblock %}
