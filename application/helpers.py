@@ -68,7 +68,7 @@ def get_team_dict():
 def update_player_dict_with_rankings(rankings_per_player):
     player_dict = get_player_dict()
     new_player_dict = {}
-    for field_name, ranking in rankings_per_player.iteritems():
+    for field_name, ranking in rankings_per_player.items():
         id = field_name.split('_')[1]
         player = player_dict.get(id)
         player.update({'ranking': ranking})
@@ -84,7 +84,7 @@ def sort_players():
     two_players = []
     three_players = []
     four_players = []
-    for id, player in player_dict.iteritems():
+    for id, player in player_dict.items():
         if player.get('ranking') == '1':
             one_players.append(player)
         if player.get('ranking') == '2':
@@ -93,7 +93,7 @@ def sort_players():
             three_players.append(player)
         if player.get('ranking') == '4':
             four_players.append(player)
-    for i in xrange(12):
+    for i in range(12):
         shuffle(one_players)
         shuffle(two_players)
         shuffle(three_players)
