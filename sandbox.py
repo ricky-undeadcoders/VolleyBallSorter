@@ -23,28 +23,31 @@ FULL PLAYER LIST
 
 """
 
-soup = BeautifulSoup(content, 'html.parser')
+import psycopg2
+import sys
 
-participants_list = soup.find_all(attrs={'class': 'pww-participant'})
+conn_string = "host='localhost' dbname='VolleyBallSorter' user='postgres' password='admin'"
+conn = psycopg2.connect(conn_string)
 
-player_list = []
-for player in participants_list:
-    player_dict = {}
-    for content in player.contents:
-        name_pattern = re.compile('[0-9]{1,2}. ([\w]+ [\w]+)')
-        name = re.match(name_pattern, str(content))
-        if name:
-            player_dict['name'] = name.groups()[0]
-        skill_pattern = re.compile('Skill: ([\w])')
-        skill = re.match(skill_pattern, str(content))
-        if skill:
-            player_dict['skill'] = skill.groups()[0]
-        gender_pattern = re.compile('Gender: ([\w]+)')
-        gender = re.match(gender_pattern, str(content))
-        if gender:
-            player_dict['gender'] = gender.groups()[0]
-    if len(player_dict) > 0:
-        player_list.append(player_dict)
+cursor = conn.cursor()
+#
+# cursor.execute("""
+# CREATE TABLE players (
+#     player_id serial PRIMARY KEY,
+#     name VARCHAR(120),
+#     skill VARCHAR(1),
+#     gender VARCHAR(6))
+#                """)
 
-for player in player_list:
-    print player
+cursor.execute("INSERT INTO players (name, skill, gender) VALUES ('Tickey', 'B', 'M')")
+
+conn.commit()
+
+cursor.execute('SELECT * FROM players')
+
+players = cursor.fetchall()
+
+print(players)
+
+cursor.execute("EXECUTE add_players('Cavie', 'A', 'Female') ")
+

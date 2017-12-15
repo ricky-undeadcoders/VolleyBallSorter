@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a86f8cd-8500-4496-b8cd-fdc8bf44f5db" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/player_dict.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/team_dict.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VolleyBallSorter.iml" afterPath="$PROJECT_DIR$/.idea/VolleyBallSorter.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.py" afterPath="$PROJECT_DIR$/sandbox.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,24 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VolleyBallSorter$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1513034774137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VolleyBallSorter$app.coverage" NAME="app Coverage Results" MODIFIED="1513198789807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/application" />
+    <SUITE FILE_PATH="coverage/VolleyBallSorter$app.coverage" NAME="app Coverage Results" MODIFIED="1513292879129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/application" />
+    <SUITE FILE_PATH="coverage/VolleyBallSorter$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1513301019321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/application/templates/home.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/templates/base.html">
               <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +45,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="teams.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="teams.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/templates/teams.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="544">
@@ -71,7 +61,7 @@
             <entry file="file://$PROJECT_DIR$/application/app.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="493">
-                  <caret line="29" column="30" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="29" selection-end-column="30" />
+                  <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
                   <folding>
                     <element signature="e#43#111#0" expanded="true" />
                   </folding>
@@ -79,13 +69,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sandbox.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="sandbox.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sandbox.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="50" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="769">
+                  <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
                   <folding>
                     <element signature="e#43#83#0" expanded="true" />
+                    <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
+                    <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
+                    <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
+                    <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
                   </folding>
                 </state>
               </provider>
@@ -95,11 +89,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="helpers.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/helpers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="623">
-                  <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+                <state relative-caret-position="363">
+                  <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
                   <folding>
                     <element signature="e#44#73#0" expanded="true" />
                   </folding>
@@ -107,11 +101,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="17">
-                  <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+                  <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -138,9 +132,14 @@
       <find>pri</find>
       <find>iteritems</find>
       <find>xrange</find>
+      <find>connect</find>
+      <find>&quot;</find>
+      <find>cursor</find>
+      <find>commit</find>
     </findStrings>
     <replaceStrings>
       <replace>/&gt;</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -153,12 +152,12 @@
         <option value="$PROJECT_DIR$/application/templates/home.html" />
         <option value="$PROJECT_DIR$/application/player_list.json" />
         <option value="$PROJECT_DIR$/application/templates/base.html" />
-        <option value="$PROJECT_DIR$/sandbox.py" />
         <option value="$PROJECT_DIR$/application/app.py" />
         <option value="$PROJECT_DIR$/application/templates/player_list.html" />
         <option value="$PROJECT_DIR$/application/helpers.py" />
         <option value="$PROJECT_DIR$/application/templates/teams.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/sandbox.py" />
       </list>
     </option>
   </component>
@@ -249,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.sandbox">
     <configuration default="false" name="sandbox" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -442,8 +441,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.app" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sandbox" />
+        <item index="0" class="java.lang.String" itemvalue="Python.sandbox" />
+        <item index="1" class="java.lang.String" itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -473,9 +472,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1094" y="423" width="701" height="267" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1042" y="183" width="1034" height="801" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="-1050" y="175" width="1050" height="1657" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -522,88 +521,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/player_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="30" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="e#43#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/player_dict.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/teams.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
@@ -636,6 +553,10 @@
           <caret line="19" column="50" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
+            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
+            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -710,6 +631,10 @@
           <caret line="22" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
+            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
+            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -782,6 +707,10 @@
           <caret line="12" column="6028" lean-forward="true" selection-start-line="12" selection-start-column="6028" selection-end-line="12" selection-end-column="6028" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
+            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
+            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -838,6 +767,10 @@
           <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
+            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
+            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -867,45 +800,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/site-packages/flask/helpers.py" />
-    <entry file="file://$PROJECT_DIR$/application/player_dict.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="30" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="e#43#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-          <folding>
-            <element signature="e#44#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/player_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -924,6 +819,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/teams.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -934,11 +845,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/pg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="312">
+          <caret line="1481" column="8" lean-forward="false" selection-start-line="1481" selection-start-column="8" selection-end-line="1481" selection-end-column="8" />
+          <folding>
+            <marker date="1513290632473" expanded="true" signature="38631:38797" ph="SELECT oid, pg_type" />
+            <marker date="1513290632473" expanded="true" signature="38867:39019" ph="SELECT oid, pg_type" />
+            <marker date="1513290632473" expanded="true" signature="50599:50947" ph="SELECT a.att... pg_attribute" />
+            <marker date="1513290632473" expanded="true" signature="51018:51354" ph="SELECT a.att... pg_attribute" />
+            <marker date="1513290632473" expanded="true" signature="65317:65630" ph="SELECT a.att... pg_index" />
+            <marker date="1513290632473" expanded="true" signature="66520:66551" ph="SELECT datna... pg_database" />
+            <marker date="1513290632473" expanded="true" signature="67342:67539" ph="SELECT quote... pg_class" />
+            <marker date="1513290632473" expanded="true" signature="73670:73704" ph="SELECT missi... missing_value" />
+            <marker date="1513290632473" expanded="true" signature="75700:75742" ph="INSERT INTO missing_value... " />
+            <marker date="1513290632473" expanded="true" signature="78307:78343" ph="UPDATE missi... " />
+            <marker date="1513290632473" expanded="true" signature="82583:82675" ph="INSERT INTO missing_value... " />
+            <marker date="1513290632473" expanded="true" signature="86272:86293" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/pgdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <marker date="1513290632488" expanded="true" signature="23136:23277" ph="SELECT oid, pg_type" />
+            <marker date="1513290632488" expanded="true" signature="23330:23463" ph="SELECT oid, pg_type" />
+            <marker date="1513290632488" expanded="true" signature="24808:24948" ph="SELECT attna... pg_attribute" />
+            <marker date="1513290632488" expanded="true" signature="38663:38685" ph="select * fro... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/pgdb/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/pgdb/pgdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/pg/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4681">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#275#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/player_dict.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/psycopg2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="129" column="17" lean-forward="false" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-2038660442/psycopg2/_psycopg/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="374" column="23" lean-forward="true" selection-start-line="374" selection-start-column="23" selection-end-line="374" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-2038660442/psycopg2/_psycopg/cursor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="184" column="60" lean-forward="false" selection-start-line="184" selection-start-column="60" selection-end-line="184" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#43#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="e#44#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding>
+            <element signature="e#43#83#0" expanded="true" />
+            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
+            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
+            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+          </folding>
         </state>
       </provider>
     </entry>
