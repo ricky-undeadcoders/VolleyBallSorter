@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a86f8cd-8500-4496-b8cd-fdc8bf44f5db" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VolleyBallSorter.iml" afterPath="$PROJECT_DIR$/.idea/VolleyBallSorter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.py" afterPath="$PROJECT_DIR$/sandbox.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/VolleyBallSorter$app.coverage" NAME="app Coverage Results" MODIFIED="1513292879129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/application" />
-    <SUITE FILE_PATH="coverage/VolleyBallSorter$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1513301019321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VolleyBallSorter$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1513305406244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -61,7 +58,7 @@
             <entry file="file://$PROJECT_DIR$/application/app.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="493">
-                  <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+                  <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
                   <folding>
                     <element signature="e#43#111#0" expanded="true" />
                   </folding>
@@ -72,14 +69,12 @@
           <file leaf-file-name="sandbox.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sandbox.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="769">
-                  <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+                <state relative-caret-position="714">
+                  <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
                   <folding>
                     <element signature="e#43#83#0" expanded="true" />
-                    <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
-                    <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
-                    <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
-                    <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+                    <marker date="1513305406048" expanded="true" signature="14660:14677" ph="SELECT AD FR... players" />
+                    <marker date="1513305406048" expanded="true" signature="14736:14757" ph="SELECT * FRO... players" />
                   </folding>
                 </state>
               </provider>
@@ -92,8 +87,8 @@
           <file leaf-file-name="helpers.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/helpers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+                <state relative-caret-position="807">
+                  <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
                   <folding>
                     <element signature="e#44#73#0" expanded="true" />
                   </folding>
@@ -133,9 +128,9 @@
       <find>iteritems</find>
       <find>xrange</find>
       <find>connect</find>
-      <find>&quot;</find>
       <find>cursor</find>
       <find>commit</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>/&gt;</replace>
@@ -168,10 +163,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1862" />
-    <option name="height" value="1096" />
+    <option name="x" value="1912" />
+    <option name="y" value="-258" />
+    <option name="width" value="1096" />
+    <option name="height" value="1936" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,7 +214,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,12 +223,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ricky\PycharmProjects\VolleyBallSorter" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ricky\PycharmProjects\VolleyBallSorter\application\templates" />
       <recent name="C:\Users\Ricky\PycharmProjects\VolleyBallSorter\application" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ricky\PycharmProjects\VolleyBallSorter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -463,20 +458,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1862" height="1096" extended-state="6" />
+    <frame x="1912" y="-258" width="1096" height="1936" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12708102" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22297297" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1042" y="183" width="1034" height="801" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1042" y="183" width="1034" height="801" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="-1050" y="175" width="1050" height="1657" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="-1050" y="175" width="1050" height="1657" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -553,10 +548,8 @@
           <caret line="19" column="50" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
-            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
-            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+            <marker date="1513305406048" expanded="true" signature="14660:14677" ph="SELECT AD FR... players" />
+            <marker date="1513305406048" expanded="true" signature="14736:14757" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -631,10 +624,8 @@
           <caret line="22" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
-            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
-            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+            <marker date="1513305406048" expanded="true" signature="14660:14677" ph="SELECT AD FR... players" />
+            <marker date="1513305406048" expanded="true" signature="14736:14757" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -659,14 +650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/player_dict.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/player_dict.json" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -707,10 +691,8 @@
           <caret line="12" column="6028" lean-forward="true" selection-start-line="12" selection-start-column="6028" selection-end-line="12" selection-end-column="6028" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
-            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
-            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+            <marker date="1513305406048" expanded="true" signature="14660:14677" ph="SELECT AD FR... players" />
+            <marker date="1513305406048" expanded="true" signature="14736:14757" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -767,10 +749,8 @@
           <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
-            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
-            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+            <marker date="1513305406048" expanded="true" signature="14660:14677" ph="SELECT AD FR... players" />
+            <marker date="1513305406048" expanded="true" signature="14736:14757" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>
@@ -849,20 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="1481" column="8" lean-forward="false" selection-start-line="1481" selection-start-column="8" selection-end-line="1481" selection-end-column="8" />
-          <folding>
-            <marker date="1513290632473" expanded="true" signature="38631:38797" ph="SELECT oid, pg_type" />
-            <marker date="1513290632473" expanded="true" signature="38867:39019" ph="SELECT oid, pg_type" />
-            <marker date="1513290632473" expanded="true" signature="50599:50947" ph="SELECT a.att... pg_attribute" />
-            <marker date="1513290632473" expanded="true" signature="51018:51354" ph="SELECT a.att... pg_attribute" />
-            <marker date="1513290632473" expanded="true" signature="65317:65630" ph="SELECT a.att... pg_index" />
-            <marker date="1513290632473" expanded="true" signature="66520:66551" ph="SELECT datna... pg_database" />
-            <marker date="1513290632473" expanded="true" signature="67342:67539" ph="SELECT quote... pg_class" />
-            <marker date="1513290632473" expanded="true" signature="73670:73704" ph="SELECT missi... missing_value" />
-            <marker date="1513290632473" expanded="true" signature="75700:75742" ph="INSERT INTO missing_value... " />
-            <marker date="1513290632473" expanded="true" signature="78307:78343" ph="UPDATE missi... " />
-            <marker date="1513290632473" expanded="true" signature="82583:82675" ph="INSERT INTO missing_value... " />
-            <marker date="1513290632473" expanded="true" signature="86272:86293" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -870,12 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <marker date="1513290632488" expanded="true" signature="23136:23277" ph="SELECT oid, pg_type" />
-            <marker date="1513290632488" expanded="true" signature="23330:23463" ph="SELECT oid, pg_type" />
-            <marker date="1513290632488" expanded="true" signature="24808:24948" ph="SELECT attna... pg_attribute" />
-            <marker date="1513290632488" expanded="true" signature="38663:38685" ph="select * fro... missing_value" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -883,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-686">
           <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,20 +857,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4681">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#275#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/player_dict.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/player_dict.json" />
     <entry file="file://$PROJECT_DIR$/../virtualenvs/VolleyBallSorter/Lib/site-packages/psycopg2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -925,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="374" column="23" lean-forward="true" selection-start-line="374" selection-start-column="23" selection-end-line="374" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,14 +880,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="184" column="60" lean-forward="false" selection-start-line="184" selection-start-column="60" selection-end-line="184" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
             <element signature="e#43#111#0" expanded="true" />
           </folding>
@@ -949,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="807">
+          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
           <folding>
             <element signature="e#44#73#0" expanded="true" />
           </folding>
@@ -959,14 +905,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sandbox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
-            <marker date="1513301019131" expanded="true" signature="14484:14616" ph="CREATE TABLE... players" />
-            <marker date="1513301019131" expanded="true" signature="14656:14706" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14656:14725" ph="INSERT INTO players... " />
-            <marker date="1513301019131" expanded="true" signature="14760:14781" ph="SELECT * FRO... players" />
+            <marker date="1513305406048" expanded="true" signature="14660:14677" ph="SELECT AD FR... players" />
+            <marker date="1513305406048" expanded="true" signature="14736:14757" ph="SELECT * FRO... players" />
           </folding>
         </state>
       </provider>

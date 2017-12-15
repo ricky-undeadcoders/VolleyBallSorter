@@ -39,8 +39,11 @@ cursor = conn.cursor()
 #     gender VARCHAR(6))
 #                """)
 
-cursor.execute("INSERT INTO players (name, skill, gender) VALUES ('Tickey', 'B', 'M')")
 
+
+
+
+cursor.execute("SELECT add_player('drophead', 'A', 'Male')")
 conn.commit()
 
 cursor.execute('SELECT * FROM players')
@@ -48,6 +51,4 @@ cursor.execute('SELECT * FROM players')
 players = cursor.fetchall()
 
 print(players)
-
-cursor.execute("EXECUTE add_players('Cavie', 'A', 'Female') ")
 
