@@ -98,9 +98,27 @@ def sort_players():
         shuffle(two_players)
         shuffle(three_players)
         shuffle(four_players)
-        team = [one_players.pop(),
-                two_players.pop(),
-                three_players.pop(),
-                four_players.pop()]
+        try:
+            player_1 = one_players.pop()
+        except:
+            player_1 = {}
+            print('No one player')
+        try:
+            player_2 = two_players.pop()
+        except:
+            player_2 = {}
+            print('No two player')
+        try:
+            player_3 = three_players.pop()
+        except:
+            player_3 = {}
+            print('No three player')
+        try:
+            player_4 = four_players.pop()
+        except:
+            player_4 = {}
+            print('No four player')
+
+        team = [player_1, player_2, player_3, player_4]
         teams.append(team)
     return teams
