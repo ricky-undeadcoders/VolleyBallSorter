@@ -2,10 +2,26 @@
 {% block body %}
 
 <div style="position: fixed; right: 20px; border:solid;" class="form-group">
-    <div class="btn form-control">Ones: <a id="1_players">0</a></div>
-    <div class="btn form-control">Twos: <a id="2_players">0</a></div>
-    <div class="btn form-control">Threes: <a id="3_players">0</a></div>
-    <div class="btn form-control">Fours: <a id="4_players">0</a></div>
+    <div class="form-control">
+        Ones: <a id="1_players">0</a>
+        Guys: <a id="1_males">0</a>
+        Gals: <a id="1_females">0</a>
+    </div>
+    <div class="form-control">
+        Twos: <a id="2_players">0</a>
+        Guys: <a id="2_males">0</a>
+        Gals: <a id="2_females">0</a>
+    </div>
+    <div class="form-control">
+        Threes: <a id="3_players">0</a>
+        Guys: <a id="3_males">0</a>
+        Gals: <a id="3_females">0</a>
+    </div>
+    <div class="form-control">
+        Fours: <a id="4_players">0</a>
+        Guys: <a id="4_males">0</a>
+        Gals: <a id="4_females">0</a>
+    </div>
     <button class="btn float-right" onclick="$('#player_list_ranking').submit();">Submit</button>
 </div>
 <div class="form-group">
@@ -16,7 +32,7 @@
             <input name="ranking_{{id}}" class="form-control col-1 ranking" placeholder="Ranking" type="number"
                    max="4" min="1" value="{{ranking}}"/>
             <input class="form-control col-3 name" name="name_{{id}}" placeholder="Name" value="{{ player['name'] }}"/>
-            <input class="form-control col-3" placeholder="Gender" value="{{ player['gender'] }}"
+            <input class="form-control col-3 gender" placeholder="Gender" value="{{ player['gender'] }}"
                    disabled/>
             <input class="form-control col-1" placeholder="Skill" value="{{ player['skill'] }}" disabled/>
         </div>
@@ -26,27 +42,68 @@
 <script type="text/javascript">
     $('.ranking').change(function () {
         var one = 0;
+        var one_male = 0;
+        var one_female = 0;
         var two = 0;
+        var two_male = 0;
+        var two_female = 0;
         var three = 0;
+        var three_male = 0;
+        var three_female = 0;
         var four = 0;
+        var four_male = 0;
+        var four_female = 0;
         $('.ranking').each(function () {
+            var gender = $(this).siblings('.gender').val().toLowerCase();
             if (parseInt($(this).val()) == 1) {
                 one += 1;
+                if (gender == 'male') {
+                    one_male += 1;
+                }
+                else {
+                    one_female += 1;
+                }
             }
             if (parseInt($(this).val()) == 2) {
                 two += 1;
+                if (gender == 'male') {
+                    two_male += 1;
+                }
+                else {
+                    two_female += 1;
+                }
             }
             if (parseInt($(this).val()) == 3) {
                 three += 1;
+                if (gender == 'male') {
+                    three_male += 1;
+                }
+                else {
+                    three_female += 1;
+                }
             }
             if (parseInt($(this).val()) == 4) {
                 four += 1;
+                if (gender == 'male') {
+                    four_male += 1;
+                }
+                else {
+                    four_female += 1;
+                }
             }
         });
         $('#1_players').text(one);
+        $('#1_males').text(one_male);
+        $('#1_females').text(one_female);
         $('#2_players').text(two);
+        $('#2_males').text(two_male);
+        $('#2_females').text(two_female);
         $('#3_players').text(three);
+        $('#3_males').text(three_male);
+        $('#3_females').text(three_female);
         $('#4_players').text(four);
+        $('#4_males').text(four_male);
+        $('#4_females').text(four_female);
     })
 </script>
 {% endblock %}
