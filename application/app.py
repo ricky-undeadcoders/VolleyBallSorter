@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, redirect, url_for
-from json import loads, dumps
-import os
 
+from application import datastore
 from application.helpers import (create_player_dict,
                                  get_player_dict,
                                  create_team_dict,
@@ -30,6 +29,7 @@ def create_app():
             create_team_dict()
             return redirect(url_for('teams'))
         player_dict = get_player_dict()
+        print(datastore.find_all_players())
         return render_template('player_list.html', player_dict=player_dict)
 
     @app.route('/teams/', methods=['GET', 'POST'])

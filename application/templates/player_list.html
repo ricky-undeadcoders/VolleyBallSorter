@@ -10,8 +10,7 @@
 </div>
 <div class="form-group">
     <form id="player_list_ranking" action="{{ url_for('player_list') }}" method="post">
-        {% for id, player in player_dict.items() %}
-
+        {% for player in players %}
         <div class="row col-10">
             <input name="ranking_{{id}}" class="form-control col-1 ranking" placeholder="Ranking" type="number"
                    max="4" min="1"/>

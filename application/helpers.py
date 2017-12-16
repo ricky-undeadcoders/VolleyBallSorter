@@ -8,6 +8,7 @@ import os
 from json import dumps, loads
 from copy import deepcopy
 from random import shuffle
+from application.datastore import create_player
 
 player_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'player_dict.json')
 team_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'team_dict.json')
@@ -35,12 +36,9 @@ def create_player_dict(content):
                 this_player_dict['gender'] = gender.groups()[0]
         if len(this_player_dict) > 0:
             player_dict[index] = this_player_dict
-
-    dict_length = len(player_dict)
-
-    # while len(player_dict) < 48:
-    #     player_dict[dict_length] = {'name': '', 'gender': '', 'skill': ''}
-    #     dict_length += 1
+            create_player(name=this_player_dict['name'],
+                          skill=this_player_dict['skill'],
+                          gender=this_player_dict['gender'])
 
     with open(player_file, 'w') as outfile:
         outfile.write(dumps(player_dict))
@@ -103,4 +101,5 @@ def sort_players():
                 three_players.pop(),
                 four_players.pop()]
         teams.append(team)
+
     return teams
