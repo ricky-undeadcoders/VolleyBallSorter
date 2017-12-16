@@ -71,7 +71,11 @@ def update_player_dict_with_rankings(rankings_per_player):
     for field_name, ranking in rankings_per_player.items():
         id = field_name.split('_')[1]
         player = player_dict.get(id)
-        player.update({'ranking': ranking})
+        if 'name' in field_name:
+            if player['name'] != ranking:
+                player.update({'name': ranking})
+        else:
+            player.update({'ranking': ranking})
         new_player_dict[id] = player
     with open(player_file, 'w') as outfile:
         outfile.write(dumps(new_player_dict))
