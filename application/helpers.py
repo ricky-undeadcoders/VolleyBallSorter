@@ -100,6 +100,5 @@ def sort_players():
                 two_players.pop(),
                 three_players.pop(),
                 four_players.pop()]
-        teams.append(team)
 
     return teams

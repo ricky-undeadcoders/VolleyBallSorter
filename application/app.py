@@ -25,19 +25,18 @@ def create_app():
     @app.route('/player_list/', methods=['GET', 'POST'])
     def player_list():
         if request.method.lower() == 'post':
-            update_player_dict_with_rankings(request.form)
-            create_team_dict()
+            datastore.update_player_rankings(request.form)
+            datastore.sort_players()
             return redirect(url_for('teams'))
-        player_dict = get_player_dict()
-        print(datastore.find_all_players())
-        return render_template('player_list.html', player_dict=player_dict)
+        players = datastore.find_all_players()
+        return render_template('player_list.html', players=players)
 
     @app.route('/teams/', methods=['GET', 'POST'])
     def teams():
         if request.method.lower() == 'post':
-            teams = create_team_dict()
+            datastore.sort_players()
         else:
-            teams = get_team_dict()
+            datastore.find_all_players()
         return render_template('teams.html', teams=teams)
 
     return app
